@@ -33,15 +33,25 @@ var showHours = document.getElementsByClassName("hours");
 var showTime = document.getElementsByClassName("time");
 var showCookies = document.getElementsByClassName("cookies");
 
+var showBroken = document.getElementsByClassName("brocken");
+var showFlies = document.getElementsByClassName("flies");
+var showbadPerson = document.getElementsByClassName("badPerson");
+var showBooze = document.getElementsByClassName("booze");
+var showFloor9 = document.getElementsByClassName("floor9");
+
 var lastStep = document.getElementsByClassName("lastStep");
 
 
 var ans = {
     'name': null,
-    'movie': null,
-    'hours': null,
-    'time': null,
-    'cookies': null
+    'place': null,
+    'bodyPart': null,
+    'swearWord': null,
+    'brocken': null,
+    'flies': null,
+    'badPerson': null,
+    'booze': null,
+    'floor9': null,
 }
 $('#nextQ').on('click', function () {
     
@@ -51,14 +61,14 @@ $('#nextQ').on('click', function () {
 });
 
 $('#nextQ1').on('click', function () {
-    ans['movie'] = document.getElementById("movie-input").value; 
+    ans['place'] = document.getElementById("place-input").value; 
     TweenMax.fromTo(showMovie, 1,  { ease: Back.easeOut.config(2), y: '450px', opacity: 0, },  { ease: Back.easeOut.config(2), y: '1850px', opacity: 1, }, 0.5)
     TweenMax.fromTo(showHours, 1,  { ease: Back.easeOut.config(2), y: '-350px', opacity: 0, },  { ease: Back.easeOut.config(2), y: '450px', opacity: 1, }, 0.5)
 });
 
 
 $('#nextQ2').on('click', function () {
-    ans['hours'] = document.getElementById("hours-input").value; 
+    ans['bodyPart'] = document.getElementById("bodyPart-input").value; 
     TweenMax.fromTo(showHours, 1,  { ease: Back.easeOut.config(2), y: '450px', opacity: 0, },  { ease: Back.easeOut.config(2), y: '1850px', opacity: 1, }, 0.5)
     TweenMax.fromTo(showTime, 1,  { ease: Back.easeOut.config(2), y: '-350px', opacity: 0, },  { ease: Back.easeOut.config(2), y: '450px', opacity: 1, }, 0.5)
 
@@ -66,16 +76,39 @@ $('#nextQ2').on('click', function () {
 
 
 $('#nextQ3').on('click', function () {
-    ans['time'] = document.getElementById("time-input").value; 
+    ans['swearWord'] = document.getElementById("swearWord-input").value; 
     TweenMax.fromTo(showTime, 1,  { ease: Back.easeOut.config(2), y: '450px', opacity: 0, },  { ease: Back.easeOut.config(2), y: '1850px', opacity: 1, }, 0.5)
-    TweenMax.fromTo(showCookies, 1,  { ease: Back.easeOut.config(2), y: '-350px', opacity: 0, },  { ease: Back.easeOut.config(2), y: '450px', opacity: 1, }, 0.5)
+    TweenMax.fromTo(showBroken, 1,  { ease: Back.easeOut.config(2), y: '-350px', opacity: 0, },  { ease: Back.easeOut.config(2), y: '450px', opacity: 1, }, 0.5)
 
 });
 
-
 $('#nextQ4').on('click', function () {
-    ans['cookies'] = document.getElementById("cookies-input").value; 
-    TweenMax.fromTo(showCookies, 1,  { ease: Back.easeOut.config(2), y: '450px', opacity: 0, },  { ease: Back.easeOut.config(2), y: '1850px', opacity: 1, }, 0.5)
+    ans['brocken'] = document.getElementById("brocken-input").value; 
+    TweenMax.fromTo(showBroken, 1,  { ease: Back.easeOut.config(2), y: '450px', opacity: 0, },  { ease: Back.easeOut.config(2), y: '1850px', opacity: 1, }, 0.5)
+    TweenMax.fromTo(showFlies, 1,  { ease: Back.easeOut.config(2), y: '-350px', opacity: 0, },  { ease: Back.easeOut.config(2), y: '450px', opacity: 1, }, 0.5)
+
+});
+$('#nextQ5').on('click', function () {
+    ans['flies'] = document.getElementById("flies-input").value; 
+    TweenMax.fromTo(showFlies, 1,  { ease: Back.easeOut.config(2), y: '450px', opacity: 0, },  { ease: Back.easeOut.config(2), y: '1850px', opacity: 1, }, 0.5)
+    TweenMax.fromTo(showbadPerson , 1,  { ease: Back.easeOut.config(2), y: '-350px', opacity: 0, },  { ease: Back.easeOut.config(2), y: '450px', opacity: 1, }, 0.5)
+
+});
+$('#nextQ6').on('click', function () {
+    ans['badPerson'] = document.getElementById("badPerson-input").value; 
+    TweenMax.fromTo(showbadPerson, 1,  { ease: Back.easeOut.config(2), y: '450px', opacity: 0, },  { ease: Back.easeOut.config(2), y: '1850px', opacity: 1, }, 0.5)
+    TweenMax.fromTo(showBooze, 1,  { ease: Back.easeOut.config(2), y: '-350px', opacity: 0, },  { ease: Back.easeOut.config(2), y: '450px', opacity: 1, }, 0.5)
+
+});
+$('#nextQ7').on('click', function () {
+    ans['booze'] = document.getElementById("booze-input").value; 
+    TweenMax.fromTo(showBooze, 1,  { ease: Back.easeOut.config(2), y: '450px', opacity: 0, },  { ease: Back.easeOut.config(2), y: '1850px', opacity: 1, }, 0.5)
+    TweenMax.fromTo(showFloor9, 1,  { ease: Back.easeOut.config(2), y: '-350px', opacity: 0, },  { ease: Back.easeOut.config(2), y: '450px', opacity: 1, }, 0.5)
+
+});
+$('#nextQ8').on('click', function () {
+    ans['floor9'] = document.getElementById("floor9-input").value; 
+    TweenMax.fromTo(showFloor9, 1,  { ease: Back.easeOut.config(2), y: '450px', opacity: 0, },  { ease: Back.easeOut.config(2), y: '1850px', opacity: 1, }, 0.5)
     TweenMax.fromTo(lastStep, 2,  { ease: Power4.easeOut, opacity: 0, y: '-100%', },  { ease: Power4.easeOut, opacity: 1, y: '100%', }, 0.5)
 
 
@@ -86,14 +119,8 @@ $('#nextQ4').on('click', function () {
     
     var whatYouGetIsWhatYouDoMain = [
         
-    whatYouGetIsWhatYouDo = '<p class="allTruthAboutYou">Dear <b> ' + ans['name'] + ' </b> <br><br> The soundtrack of <b> ' + ans['movie'] + ' </b> will be the soundtrack of your happiest moments in 2017. <br> Number of Emails we know you have ignored in 2016 is <b> ' + ans['hours'] + ' </b> <br> In 2017, the average hour you will get home from work will be <b> ' + ans['time'] + ' </b> pm. <br> Your monthly salary in 2017 will be <b> ' + ans['cookies'] + ' </b>. </p>',
-    
-    whatYouGetIsWhatYouD1 = '<p class="allTruthAboutYou">Dear <b> ' + ans['name'] + ' </b> <br><br> Your next year will be based on <b> ' + ans['movie'] + ' </b> plot. <br> Number of good deeds you have done in 2016 is <b>' + ans['hours'] + ' </b> <br> In 2017, your kids will go to bed every day at <b> ' + ans['time'] + ' </b> pm.  <br> Your yearly bonus in 2017 will be <b> ' + ans['cookies'] + ' </b> . </p>',
-    
-    whatYouGetIsWhatYouD2 = '<p class="allTruthAboutYou">Dear <b> ' + ans['name'] + ' </b> <br><br> Your attitude in 2017 will be like the hero of <b> ' + ans['movie'] + ' </b> attitude. <br> Number of bad deeds you have done in 2016 is <b> ' + ans['hours'] + ' </b> <br> All of your urgent conference calls will schedule at <b> ' + ans['time'] + ' </b> pm. <br> In 2017, your kids will get <b> ' + ans['cookies'] + ' </b> from you as pocket money. Daily. </p>',
-        
-    whatYouGetIsWhatYouD3 = '<p class="allTruthAboutYou">Dear <b> ' + ans['name'] + ' </b> <br><br> On New Year\'s Eve party, make sure to wear something the hero of <b> ' + ans['movie'] + ' </b> would wear. <br> Number of times we know you have spent on Facebook instead of working in 2016 is <b> ' + ans['hours'] + ' </b>. <br> Every day in 2017, your mayor will schedule the noisiest construction work in your street at <b> ' + ans['time'] + ' </b> pm.  <br><br> Amount of speeding ticket you will have to pay in 2017, will be <b> ' + ans['cookies'] + ' </b> *765.8 Dollars.</p>',
-        
+    whatYouGetIsWhatYouDo = '<p class="allTruthAboutYou">Здравствуй Дедушка Мороз. Меня зовут <b>' + ans['name'] + '</b> и я нахожусь в <b>' + ans['place'] + '</b> <br> и пишу это письмо. Когда я не слушаюсь маму, она бросает в меня утюг и частенько попадает мне прямо в <b> ' + ans['bodyPart'] + ' </b> А мой папа всегда кричит: <b>' + ans['swearWord'] + '</b> <br> И заставляет меня чинить его <b>' + ans['brocken'] + '</b> Но я не умею ничего ремонтировать, и поэтому у меня получается  <b> ' + ans['flies'] + ' </b> <br>  Ещё папа придумал мне кличку, и зовёт меня не по имени, а <b> ' + ans['badPerson'] + ' </b> И это за частую обидно. В общем, дедушка мороз, если ты не <b> ' + ans['badPerson'] + ' </b> то ты поймёшь как мне <b>' + ans['booze'] + '</b> <br> Дорогой Дедушка мороз забери меня к себе. Ещё сделай так, что бы близкие мне люди любили меня и почаще давали мне денег. Любимый дед мороз, ты мой последний шанс. Я надеюсь на новый год я найду под ёлочкой что-то для себя. Если ты не прочтёшь это письмо или оно не дойдёт до тебя, мне </br> <b>'  + ans['floor9'] +  ' </b> <br> Помни что я верю в тебя, спасибо  <b>' + ans['swearWord'] + '</b> </br> </p> ',
+
     ];
     
     var randomItem = whatYouGetIsWhatYouDoMain[Math.floor(Math.random()*whatYouGetIsWhatYouDoMain.length)]
@@ -102,7 +129,7 @@ $('#nextQ4').on('click', function () {
     
     
 
-    
+
      
 });
 

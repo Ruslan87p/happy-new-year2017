@@ -66,14 +66,14 @@ body {
     
     .lastStep {
         width: 80%;
-        height: 68.5%;
+        height: 100%;
         position: absolute;
         z-index: 3000;
         background: #EEEEDB;
         margin: 0 auto;
         left: 0;
         right: 0;
-        top: -70%;
+        top: -110%;
         border-bottom-left-radius: 40px;
         border-bottom-right-radius: 40px;
         border-style: dotted;
@@ -91,13 +91,16 @@ body {
     }
     
     .allTruthAboutYou {
-        width: 70%;
-        height: auto;
-        margin: 0 auto;
-        padding-top: 10px;
-        font-family: sans-serif;
-        line-height: 170%;
-        font-size: 23px;
+      width: 70%;
+      height: auto;
+      margin: 0 auto;
+      padding-top: 10px;
+      font-family: sans-serif;
+      line-height: 150%;
+      font-size: 23px;
+      display: block;
+      position: relative;
+      top: 80px;
     }
     
 
@@ -195,7 +198,7 @@ input[type=text]:focus {
   
     }
     
-    .hours-input {
+    .place-input {
         margin-top: 20px;
         outline: none;
         border: none;
@@ -249,7 +252,7 @@ input[type=text]:focus {
         font-size: 15px;
     }
     
-    .movie-input {
+    .bodyPart-input {
         margin-top: 20px;
         outline: none;
         border: none;
@@ -298,7 +301,7 @@ input[type=text]:focus {
         font-size: 15px;
     }
     
-    .time-input {
+    .swearWord-input {
         margin-top: 20px;
         outline: none;
         border: none;
@@ -317,7 +320,7 @@ input[type=text]:focus {
     
     
     
-    .cookies {
+    .brocken, .flies, .badPerson, .booze, .floor9 {
         width: 100%;
         max-width: 600px;
         height: 250px;
@@ -338,7 +341,7 @@ input[type=text]:focus {
         font-size: 18px;
     }
     
-    .nextQ4 {
+    .nextQ4, .nextQ5, .nextQ6, .nextQ7, .nextQ8 {
         margin-top: 30px;
         width: 80px;
         height: 30px;
@@ -351,7 +354,7 @@ input[type=text]:focus {
         font-size: 15px;
     }
     
-    .cookies-input {
+    .brocken-input, .flies-input, .badPerson-input, .booze-input, .floor9-input {
         margin-top: 20px;
         outline: none;
         border: none;
@@ -362,23 +365,6 @@ input[type=text]:focus {
         font-family: 'Baloo Thambi', cursive;;
     }
 
-.from-velis {
-    color: #fff;
-    position: absolute;
-    bottom: 50px;
-    font-size: 25px;
-    left: 50px;
-    font-family: 'Baloo Thambi', cursive;
-}
-
-.heart {
-  position: absolute;
-  z-index: 2200;
-  height: 30px;
-  bottom: 5px;
-  left: 105%;
-  animation: pulse 2s ease infinite;
-}
 
 @keyframes pulse {
   0% {
